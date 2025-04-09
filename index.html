@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic DOM Manipulation</title>
+  <!-- Optional: Link to an external CSS file if desired -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="main-title">Welcome to DOM Manipulation!</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#content">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main id="content">
+    <!-- Section to change text content -->
+    <section>
+      <h2>Dynamic Content</h2>
+      <p id="content-paragraph">This is some original text.</p>
+      <button id="change-text-btn">Change Text</button>
+    </section>
+
+    <!-- Section to modify CSS styles -->
+    <section>
+      <h2>Style Modification</h2>
+      <div id="style-box" style="width:100px; height:100px; background-color: lightblue; line-height: 100px; text-align: center;">
+        Box
+      </div>
+      <button id="change-style-btn">Change Style</button>
+    </section>
+
+    <!-- Section to add or remove an element -->
+    <section>
+      <h2>Add/Remove Element</h2>
+      <div id="element-container">
+        <p id="remove-me">I might disappear!</p>
+      </div>
+      <button id="toggle-element-btn">Add/Remove Element</button>
+    </section>
+  </main>
+  
+  <aside id="about">
+    <h2>Side Note</h2>
+    <p>Additional information or tips.</p>
+  </aside>
+
+  <footer id="contact">
+    <p>&copy; 2025 Example Company</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
